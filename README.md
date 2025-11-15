@@ -61,8 +61,8 @@ Ce formulaire doit permettre de collecter :
 
 ## 🧠 Rappel
 Veillez à :
-- **Valider votre HTML** sur le validateur W3C 
-- **Valider votre feuille de style** sur le validateur W3C 
-- **Respecter le rendu visuel** demandé dans `final_screenshot.png` et `final_screenshot_responsive.png`.  
+- **Valider votre HTML** sur le validateur W3C.
+- **Valider votre feuille de style** sur le validateur W3C.
 - **Indenter proprement** votre code pour une meilleure lisibilité.
+
 
