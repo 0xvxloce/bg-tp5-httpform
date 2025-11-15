@@ -17,10 +17,6 @@ Ce formulaire doit permettre de collecter :
 ---
 ## 📘 Ressources fournies
 - Le fichier **TP5.pdf** vous guidera **étape par étape** pour la réalisation de la mise en page.
-- Votre mission consiste à créer et appliquer une **feuille de style CSS** afin d’obtenir le même rendu visuel que celui présenté dans le fichier **`final_screenshot.png`**.
-- **13 dossiers** sont fournis, correspondant aux **13 étapes** que vous devez réaliser.
-- Le dossier **`img`** contient les **images nécessaires** à la mise en page.
-
 
 ---
 
@@ -69,3 +65,4 @@ Veillez à :
 - **Valider votre feuille de style** sur le validateur W3C 
 - **Respecter le rendu visuel** demandé dans `final_screenshot.png` et `final_screenshot_responsive.png`.  
 - **Indenter proprement** votre code pour une meilleure lisibilité.
+
