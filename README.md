@@ -24,11 +24,9 @@ Ce formulaire doit permettre de collecter :
 
 1. **Accès à l’énoncé**
    - L’énoncé complet du TP est déposé sur **GitHub**.
-   - Le lien de l’assignement est communiqué dans **Google Classroom**.
 
 2. **Création de votre espace de travail**
-   - Acceptez l’assignement sur GitHub Classroom.
-   - Clonez ensuite votre dépôt individuel.
+   - Forkez puis cloner le projet.
    
 3. **Configuration de l'environnement**
    - Installez et configurez Apache
