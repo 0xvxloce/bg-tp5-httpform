@@ -50,6 +50,7 @@ body {
   margin: 8px 0 0;
   font-size: 14px;
 }
+
 main {
   width: 90%;
   max-width: 850px;
@@ -72,8 +73,9 @@ main {
 .caption p {
   margin: 0;
 }
+
 .section {
-  background-color: white;
+  background-color: rgb(250, 250, 250);
   padding: 24px 28px;
   border-radius: 12px;
   border-left: 5px solid #e8445a;
@@ -84,6 +86,7 @@ main {
   margin: 0 0 20px;
   font-size: 20px;
 }
+
 input,
 textarea {
   width: 100%;
@@ -95,21 +98,24 @@ textarea {
   background: #fff;
   color: #17213c;
 }
+
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
+
 .field {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
 }
 
-.field label {
+label {
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 6px;
+  color: #17213cc7;
 }
 
 .field input,
@@ -168,11 +174,13 @@ textarea {
   height: 20px;
   accent-color: #e8445a;
 }
+
 .checkboxes {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+
 .checkboxes label {
   display: flex;
   align-items: center;
@@ -181,11 +189,13 @@ textarea {
   border-radius: 6px;
   cursor: pointer;
 }
+
 .checkboxes input[type="checkbox"] {
   width: 20px;
   height: 20px;
   accent-color: #e8445a;
 }
+
 select[multiple] {
   width: 100%;
   padding: 10px;
@@ -194,10 +204,73 @@ select[multiple] {
   font-size: 14px;
   box-sizing: border-box;
 }
+
 select[multiple] option:checked {
   background: linear-gradient(#ccc, #ccc);
   color: #000;
 }
+
 .spacer-20 {
   height: 20px;
+}
+
+.slider {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+#freqsel {
+  color: white;
+  background-color: #e8445a;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.slider input[type="range"] {
+  accent-color: #e8445a;
+}
+
+input[type="color"] {
+  display: block;
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  padding: 2px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  padding: 12px 14px;
+  min-height: 150px;
+  field-sizing: content;
+}
+
+.subfooter {
+  color: #6b7780;
+  margin: 10px 10px 15px 0px;
+  font-size: small;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn button {
+  background: linear-gradient(to right, #ed4059, #c91d3b);
+  color: white;
+  font-weight: bold;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 25px;
+  height: 50px;
+  font-size: large;
+  cursor: pointer;
 }

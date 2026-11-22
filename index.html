@@ -139,23 +139,61 @@
                 <input type="url" id="site" name="site" placeholder="https://exemple.com">
             </section>
             <section class="section">
-                <h2>Disponibilités et préférences</h2>
+                <h2>📅Disponibilités et préférences</h2>
                 <div class="row">
-                    <div class="field"> <label for="semaine">Semaine préférée</label>
-                        <input type="week" name="semaine">
+                    <div class="field"> <label for="semaine">Semaine préférée:</label>
+                        <input type="week" name="semaine" id="semaine">
                     </div>
-                    <div></div>
+                    <div class="field"><label for="horaire">Horaire préférée:</label>
+                        <input type="time" name="horaire" id="horaire">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="firstseance">Première séance souhaitée:</label>
+                    <input type="datetime-local" name="firstseance" id="firstseance">
+                </div>
+
+
+                <div class="field">
+                    <label for="freqcine">À quelle fréquence allez-vous au cinéma actuellement ?</label>
+                    <div class="slider">
+                        <input type="range" id="freqcine" name="freqcine" min="0" max="30" value="4">
+                        <span id="freqsel">4</span>
+                        <span>fois/mois</span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="couleurcarte">Couleur de votre carte de membre:</label>
+                    <input type="color" name="couleurcarte" id="couleurcarte" value=" #e8445a">
 
                 </div>
 
 
-
             </section>
-
+            <section class="section">
+                <h2>
+                    📎Documents et informations complémentaires
+                </h2>
+                <div class="field">
+                    <label for="photo_id">Photo d'identité (pour la carte)</label>
+                    <input type="file" name="photo_id" id="photo_id">
+                </div>
+                <div class="field">
+                    <label for="justificatif_etu">Justificatif étudiant (optionnel, -20% sur l'abonnement)</label>
+                    <input type="file" name="justificatif_etu" id="justificatif_etu">
+                </div>
+                <div class="field">
+                    <label for="passion">Parlez-nous de votre passion pour le cinéma :</label>
+                    <textarea
+                        placeholder="Quel est votre film préféré ? Pourquoi aimez-vous le cinéma ? Des suggestions pour le club ?"
+                        name="passion" id="passion"></textarea>
+                </div>
+                <span class="subfooter">
+                    Code de parrainage appliqué automatiquement
+                </span>
+            </section>
+            <div class="btn"><button id="submit" type="submit">🎬 Rejoindre CinéPass</button></div>
         </form>
-
-
-
     </main>
 </body>
 
