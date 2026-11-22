@@ -16,7 +16,7 @@
     </header>
     <main>
         <div class="caption">
-            <p>💡Rejoingnez notre club et profitez de tarifs réduits, d'avants-premières exclusives et de rencontres
+            <p>💡Rejoignez notre club et profitez de tarifs réduits, d'avants-premières exclusives et de rencontres
                 avec des realisateurs !
             </p>
         </div>
@@ -83,7 +83,7 @@
                 <div class="row">
                     <div class="field">
                         <label for="date-debut">Date de début souhaitée :</label>
-                        <input type="date" id="date-debut" name="date-debut" required>
+                        <input type="month" id="date-debut" name="date-debut" required>
                     </div>
                     <div class="field">
                         <label for="duree">Durée d'engagement :</label>
@@ -95,7 +95,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="spacer-20"></div>
+                <div class="spacer-15"></div>
                 <div class="field">
                     <label for="accompagnants">Nombre d'accompagnants habituels :</label>
                     <input type="number" id="accompagnants" name="accompagnants" value="0" min="0" max="10">
@@ -130,11 +130,11 @@
                     <option value="espagnol">Español</option>
                     <option value="autre">Autre</option>
                 </select>
-                <div class="spacer-20"></div>
+                <div class="spacer-15"></div>
                 <label for="realisateur">Réalisateur préféré (recherche) :</label>
                 <input type="text" id="realisateur" name="realisateur"
                     placeholder="Ex: Hitchcock, Kubrick, Tarantino...">
-                <div class="spacer-20"></div>
+                <div class="spacer-15"></div>
                 <label for="site">Site ou blog cinéma que vous suivez :</label>
                 <input type="url" id="site" name="site" placeholder="https://exemple.com">
             </section>
@@ -157,14 +157,14 @@
                 <div class="field">
                     <label for="freqcine">À quelle fréquence allez-vous au cinéma actuellement ?</label>
                     <div class="slider">
-                        <input type="range" id="freqcine" name="freqcine" min="0" max="30" value="4">
+                        <input type="range" id="freqcine" name="freqcine" min="0" max="12" value="4">
                         <span id="freqsel">4</span>
                         <span>fois/mois</span>
                     </div>
                 </div>
                 <div class="field">
                     <label for="couleurcarte">Couleur de votre carte de membre:</label>
-                    <input type="color" name="couleurcarte" id="couleurcarte" value=" #e8445a">
+                    <input type="color" name="couleurcarte" id="couleurcarte" value="#e8445a">
 
                 </div>
 
@@ -188,13 +188,23 @@
                         placeholder="Quel est votre film préféré ? Pourquoi aimez-vous le cinéma ? Des suggestions pour le club ?"
                         name="passion" id="passion"></textarea>
                 </div>
+                <div class="spacer-15"></div>
                 <span class="subfooter">
                     Code de parrainage appliqué automatiquement
                 </span>
+                <div class="spacer-15"></div>
             </section>
             <div class="btn"><button id="submit" type="submit">🎬 Rejoindre CinéPass</button></div>
         </form>
     </main>
+    <script>
+  const slider = document.getElementById('freqcine');
+  const affichage = document.getElementById('freqsel');
+
+  slider.addEventListener('input', () => {
+    affichage.textContent = slider.value;
+  });
+</script>
 </body>
 
 </html>

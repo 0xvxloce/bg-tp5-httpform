@@ -7,7 +7,7 @@ body {
   padding: 20px 0;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  background: linear-gradient(170deg, #141a30 0%, #16264a 100%);
+  background: linear-gradient(170deg, #141a30 0%, #1b3268 100%);
   color: #17213c;
 }
 
@@ -210,8 +210,8 @@ select[multiple] option:checked {
   color: #000;
 }
 
-.spacer-20 {
-  height: 20px;
+.spacer-15 {
+  height: 10px;
 }
 
 .slider {
@@ -229,6 +229,11 @@ select[multiple] option:checked {
 }
 
 .slider input[type="range"] {
+  flex: 1;
+  width: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
   accent-color: #e8445a;
 }
 
@@ -243,34 +248,50 @@ input[type="color"] {
   cursor: pointer;
 }
 
+input[type="file"] {
+  display: block;
+  width: 40%;
+  padding: 12px 15px;
+  border: 2px dashed #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+  font-size: 14px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+input[type="file"]:hover {
+  border-color: #e8445a;
+}
+
 textarea {
   width: 100%;
   box-sizing: border-box;
   resize: vertical;
   padding: 12px 14px;
   min-height: 150px;
-  field-sizing: content;
+  
 }
 
 .subfooter {
   color: #6b7780;
-  margin: 10px 10px 15px 0px;
   font-size: small;
 }
 
 .btn {
   display: flex;
   justify-content: center;
+  margin-top: 30px
 }
 
 .btn button {
   background: linear-gradient(to right, #ed4059, #c91d3b);
   color: white;
   font-weight: bold;
-  padding: 15px 40px;
+  padding: 0px 40px;
   border: none;
-  border-radius: 25px;
-  height: 50px;
-  font-size: large;
+  border-radius: 30px;
+  height: 54px;
+  font-size: 18px;
   cursor: pointer;
 }
